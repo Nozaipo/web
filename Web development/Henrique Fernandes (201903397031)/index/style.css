@@ -1,0 +1,234 @@
+header {width: 100%}
+body {margin: 0; background-color: #dbdbdb}
+div#tudo, footer {width: 70%; margin-left: 15%;}
+
+ul#topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul#topnav a.bar, a.main {float: left;}
+
+ul#topnav a.bar, a.main {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+a#rank {transition: color 0.75s }
+
+li.bar a:hover {background-color: #9b9b9b}
+
+@media screen and (max-width: 700px) {
+	ul#topnav li.bar a {float: none;}
+	div.outras-bar {display: none;}
+	li.bar:hover div.outras-bar {display:block}
+	div#albuns div.musicas-albuns ul li {margin-bottom: 15px; padding: 5px;}
+}
+
+/*NAV BAR END*/
+
+#banner {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#banner a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #3f3d3d;
+	float: right;
+}
+
+#banner a:hover {
+	color: #5064db;
+	/*color: #7f7c7c;*/
+}
+
+#foto-artista, #artista {
+	display: ruby-text;
+}
+
+#foto-artista {
+	margin: 20px;
+	border-radius: 50%;
+}
+
+/*BANNER END*/
+
+
+div#albuns {
+	text-align: center;
+	margin-top: 40px;
+}
+
+div#albuns h1 {
+	border-bottom: 4px solid black;
+	line-height: 0.1em;
+}
+
+div#albuns span {
+	width: 100%;
+	background-color: #dbdbdb;
+}
+
+div#albuns div a{
+	transition: color 0.75s;
+	display: block;
+	cursor: default;
+	margin-top: 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #dbdbdb;
+}
+
+
+div#albuns div{
+	width: 33%;
+	list-style-type: none;
+	float: inline-start;
+}
+
+div#albuns div ul{
+	padding-left: 0;
+}
+
+div#albuns div ul {
+	list-style-type: none;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input {
+	display: none;
+}
+
+label {
+	transition: background 1s;
+	cursor: pointer;
+	display: block;
+	font-size: 20px;
+	color: #3f3d3d;
+}
+
+#check-1:checked ~ a.expandivel{
+	color: #3f3d3d;
+	cursor: pointer;
+}
+
+#check-2:checked ~ a.expandivel{
+	cursor: pointer;
+	color: #3f3d3d;
+}
+
+#check-3:checked ~ a.expandivel{
+	cursor: pointer;
+	color: #3f3d3d;
+}
+
+#check-1:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+#check-2:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+#check-3:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+div.musicas-albuns a:last-child {
+	margin-bottom: 300px;
+}
+
+footer {
+	display: inline-flex;
+	/*float: left;*/
+}
+
+footer img {
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+footer p {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+/*footer {
+	height: 140px;
+	border: 0.5px solid black;
+}
+
+footer div img {
+	margin: 10px;
+	border-radius: 5%;
+	float: left;
+}
+*/
+/*
+.show--info {
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+}
+
+.show--info + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	float: right;
+}
+
+.show--info + label {
+	padding: 2px;
+	width: 60px;
+	height: 30px;
+	background-color: black;
+	border-radius: 60px;
+}
+
+.show--info + label:before,
+.show--info + label:after {
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	content: '';
+}
+
+.show--info + label:before {
+	right: 1px;
+	background-color: #f1f1f1;
+	border-radius: 60px;
+	transition: all 0.4s;
+}
+
+.show--info + label:after {
+	width: 30px;
+	background-color: #fff;
+	border-radius: 80%;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	transition: all 0.4s;
+}
+
+.show--info:checked + label:before {
+	background-color: #222ac3;
+	border-radius: 60px;
+}
+
+.show--info:checked + label:after {
+	transform: translateX(30px);
+}*/

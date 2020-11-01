@@ -1,0 +1,82 @@
+header {width: 100%}
+body {margin: 0; background-color: #dbdbdb}
+table#tudo {width: 50%; margin: 0 25% 0 25%;}
+
+ul#topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul#topnav a.bar, a.main {float: left;}
+
+
+ul#topnav a.bar, a.main {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li.bar a:hover {background-color: #9b9b9b}
+
+@media screen and (max-width: 700px) {
+	ul#topnav li.bar a {float: none;}
+	div.outras-bar {display: none;}
+	li.bar:hover div.outras-bar {display:block}
+	div#albuns div.musicas-albuns ul li {margin-bottom: 15px; padding: 5px;}
+}
+
+/*NAV BAR END*/
+
+table#tudo a {
+	text-decoration: none;
+	transition: color 0.75s;
+	color: #3f3d3d;
+	margin: 5px;
+}
+
+table#tudo a:hover, #voltar:hover {
+	color: #5064db;
+}
+
+th {
+	font-style: italic;
+	text-align: center;
+	font-size: 28px;
+	color: #3f3d3d;
+}
+
+td {
+	font-size: 18px;
+	color: #3f3d3d;
+	margin: 5px;
+}
+
+th, td {
+	border: 2px solid black;
+	width: 50%;
+}
+
+#flecha-esquerda {
+	margin-top: 5px;
+	margin-left: 5px;
+	border: solid black;
+	border-width: 0 5px 5px 0;
+	display: inline-block;
+	padding: 6px;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+#voltar {
+	color: #3f3d3d;
+	margin: 0;
+	display: ruby-text;
+	text-decoration: none;
+	font-size: 18px;
+	color: ;
+}

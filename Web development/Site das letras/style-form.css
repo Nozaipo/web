@@ -1,0 +1,81 @@
+header {width: 100%}
+body {margin: 0; background-color: #dbdbdb}
+div#tudo, footer {width: 70%; margin-left: 15%;}
+
+ul#topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul#topnav a.bar, a.main {float: left;}
+
+ul#topnav a.bar, a.main {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+button.main {
+	width: 30px;
+	height: 30px;
+}
+
+a#rank {transition: color 0.75s }
+
+li.bar div:not(.login-bar) a:hover {background-color: #9b9b9b}
+
+@media screen and (max-width: 700px) {
+	/*div.main-bar {display: flex;}*/
+	/*div.main-bar a, div.main-bar p {margin: 0;}*/
+	/*div.main-bar a {width: 90%; margin: 0;}*/
+	/*div.main-bar p button {vertical-align: center; float: right; margin: 8px}*/
+
+	ul#topnav li.bar a {float: none;}
+	div.outras-bar {display: none;}
+	li.bar:hover div.outras-bar {display:block}
+	div#albuns div.musicas-albuns ul li {margin-bottom: 15px; padding: 5px;}
+}
+
+div.login-bar img{
+	width: 42px;
+	height: 42px;
+}
+
+div.login-bar {
+	float: right;
+}
+
+/*END NAV BAR*/
+
+div.container-login{
+	border-radius: 30px;
+	border: 2px solid black;
+	margin: 20px 0 0 20%;
+	width: 60%;
+	text-align: center;
+}
+
+p#banner-login {
+	margin: 40px 0 0 0;
+	font-size: 40px;
+	font-style: italic;
+}
+
+div.formulario {
+	margin: 30px 0 30px 41%;
+	width: 18%;
+}
+
+.campos {
+	margin-bottom: 15px;
+}
+
+button.campos {
+	border-radius: 2px;
+	margin-left: 10%;
+}

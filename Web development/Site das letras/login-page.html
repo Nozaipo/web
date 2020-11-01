@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style-form.css">
+		<script src="code.js"></script>
+		<title>Só letras</title>
+	</head>
+
+	<header>
+		<ul id="topnav">
+			<li class="bar">
+				<div class='main-bar'>
+					<a class="main" href="index.html">Inicio </a>
+					<!-- <p><button class="main" onclick="moveDivBanner()"></button></p> -->
+				</div>
+				<div class="outras-bar">
+					<a class="bar" href="">Mais ouvidas</a>
+					<a class="bar" href="">Artistas</a>
+					<a class="bar" href="">Albuns</a>
+				</div>
+				<div class="login-bar">
+					<a href="login-page.html"><img src="img/icon-login.png"></a>
+				</div>
+			<li>
+		</ul>
+	</header>
+
+	<body>
+		<div class="container-login" >
+			<p id="banner-login">Só letras</p>
+			<div class="formulario">
+				<label class="campos" for="email"><strong>Email:</strong></label><br>
+				<input class="campos" type="text" name="email" id="email"><br>
+				<label class="campos" for="senha"><strong>Senha:</strong></label><br>
+				<input class="campos" type="password" name="senha" id="senha"><br>
+				<br>
+				<button class="campos" onclick="receberDadosParaLogin()">Entrar</button><br>
+				<br>
+				<a class="campos" style="text-decoration: none; color: black" href="criar-conta.html"><strong>Criar conta</strong></a>
+			</div>
+		</div>
+	</body>
+</html>

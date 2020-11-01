@@ -1,0 +1,193 @@
+header {width: 100%}
+body {margin: 0; background-color: #dbdbdb}
+div#tudo, footer {width: 70%; margin-left: 15%;}
+
+ul#topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul#topnav a.bar, a.main {float: left;}
+
+ul#topnav a.bar, a.main {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+button.main {
+	width: 30px;
+	height: 30px;
+}
+
+a#rank {transition: color 0.75s }
+
+li.bar div:not(.login-bar) a:hover {background-color: #9b9b9b}
+
+@media screen and (max-width: 700px) {
+	/*div.main-bar {display: flex;}*/
+	/*div.main-bar a, div.main-bar p {margin: 0;}*/
+	/*div.main-bar a {width: 90%; margin: 0;}*/
+	/*div.main-bar p button {vertical-align: center; float: right; margin: 8px}*/
+
+	ul#topnav li.bar a {float: none;}
+	div.outras-bar {display: none;}
+	li.bar:hover div.outras-bar {display:block}
+	div#albuns div.musicas-albuns ul li {margin-bottom: 15px; padding: 5px;}
+}
+
+div.login-bar img{
+	width: 45px;
+	height: 45px;
+}
+
+div.login-bar {
+	float: right;
+}
+
+/*NAV BAR END*/
+
+@keyframes moveBanner {
+	0% {margin-top: 0;}
+	25% {margin-top: 14px;}
+	50% {margin-top: 28px;}
+	75% {margin-top: 42px;}
+	100% {margin-top: 56px;}
+}
+
+#banner {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#banner a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #3f3d3d;
+	float: right;
+}
+
+#banner a:hover {
+	color: #5064db;
+	/*color: #7f7c7c;*/
+}
+
+#foto-artista, #artista {
+	display: ruby-text;
+}
+
+#foto-artista {
+	margin: 20px;
+	border-radius: 50%;
+}
+
+/*BANNER END*/
+
+
+div#albuns {
+	text-align: center;
+	margin-top: 40px;
+}
+
+div#albuns h1 {
+	border-bottom: 4px solid black;
+	line-height: 0.1em;
+}
+
+div#albuns span {
+	width: 100%;
+	background-color: #dbdbdb;
+}
+
+div#albuns div a{
+	transition: color 0.75s;
+	display: block;
+	cursor: default;
+	margin-top: 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #dbdbdb;
+}
+
+
+div#albuns div{
+	width: 33%;
+	list-style-type: none;
+	float: inline-start;
+}
+
+div#albuns div ul{
+	padding-left: 0;
+}
+
+div#albuns div ul {
+	list-style-type: none;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input {
+	display: none;
+}
+
+label {
+	transition: background 1s;
+	cursor: pointer;
+	display: block;
+	font-size: 20px;
+	color: #3f3d3d;
+}
+
+#check-1:checked ~ a.expandivel{
+	color: #3f3d3d;
+	cursor: pointer;
+}
+
+#check-2:checked ~ a.expandivel{
+	cursor: pointer;
+	color: #3f3d3d;
+}
+
+#check-3:checked ~ a.expandivel{
+	cursor: pointer;
+	color: #3f3d3d;
+}
+
+#check-1:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+#check-2:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+#check-3:checked ~ a.expandivel:hover{
+	color: #5064db;
+}
+
+div.musicas-albuns a:last-child {
+	margin-bottom: 300px;
+}
+
+footer {
+	display: inline-flex;
+	/*float: left;*/
+}
+
+footer img {
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+footer p {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
